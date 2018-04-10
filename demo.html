@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原生JS贪吃蛇游戏</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+
+<div class="startPage" id="startPage"><!--开始界面-->
+    <div class="startBtn" id="startBtn"></div><!--开始按钮-->
+</div>
+
+<div class="wrapper">
+    <div class="left-side"><!--左上角的暂停-->
+        <img src="image/start.png" id="startP">
+    </div>
+    <div class="main"><!--主界面-->
+        <div class="header"> <!--顶部-->
+            <div class="score"><!--分数-->
+                分数：
+                <span id="score"></span>
+            </div>
+        </div>
+        <div class="content" id="content"></div><!--蛇运动的区域-->
+    </div>
+</div>
+
+<div class="loser" id="lose"><!--游戏结束弹出-->
+    <div class="con"><!--弹出图画-->
+        <div class="close" id="close"><!--关闭按钮--></div>
+        <span class="loserScore" id="loserScore"></span><!--显示分数-->
+    </div>
+</div>
+
+<script src="demo.js"></script>
+</body>
+</html>
